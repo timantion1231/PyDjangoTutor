@@ -1,7 +1,11 @@
-#ex1
-a = [65, 54, 85, 58, 5454, 548, 656, 237, 57, 99, 98, 78]
-for i in a:
-    if i % 2 == 0:
-        print(i)
-    elif i == 237:
-        break
+import ex1
+
+if __name__ == '__main__':
+    proga = -1
+    while proga != 0:
+        proga = int(input("enter the ex num\n1: ex1\n2: ex2\n0: exit\n"))
+        if proga == 1:
+            ex1.exs.ex1()
+        elif proga == 2:
+            ex1.exs.ex2()
+
